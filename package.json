@@ -1,0 +1,26 @@
+{
+  "name": "hapi-googleapis",
+  "version": "1.0.0",
+  "description": "hapi plugin for googleapis node library",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kenkouot/hapi-googleapis.git"
+  },
+  "keywords": [
+    "googleapis",
+    "hapi"
+  ],
+  "author": "Ken Kouot @kenkouot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kenkouot/hapi-googleapis/issues"
+  },
+  "homepage": "https://github.com/kenkouot/hapi-googleapis",
+  "dependencies": {
+    "googleapis": "^2.0.3"
+  }
+}

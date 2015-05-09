@@ -1,4 +1,3 @@
-function default_1(client, options, next) {
+module.exports = function (client, options, next) {
     next(null, client.generateAuthUrl(options));
-}
-exports.default = default_1;
+};
