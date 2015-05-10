@@ -11,7 +11,7 @@ exports.register = function (server, options, next) {
 
 	server.method('oAuth.generateAuthUrl', function (next) {
 		var fn = require('./methods/generate-auth-url');
-		return fn(OAuth2, {
+		return fn(oAuthClient, {
 			'access_type': options.accessType,
 			scope: options.scope
 		}, next);
