@@ -11,10 +11,16 @@ exports.register = function (server, options, next) {
 
 	server.method('oAuth.generateAuthUrl', function (next) {
 		var fn = require('./methods/generate-auth-url');
-		return fn(oAuthClient, {
+		return fn(OAuth2, {
 			'access_type': options.accessType,
 			scope: options.scope
 		}, next);
+	});
+
+	server.method('oAuth.getClientInstance', function (next) {
+		// returns a new instance for use in setCredentials
+		var newClient = new OAuth2(options.clientId, options.clientSecret, options.redirectUri);
+		next(null, newClient);
 	});
 
 	return next();
