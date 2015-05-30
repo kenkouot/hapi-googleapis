@@ -1,6 +1,6 @@
 {
   "name": "hapi-googleapis",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "description": "hapi plugin for googleapis node library",
   "main": "index.js",
   "scripts": {
