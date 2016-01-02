@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/kenkouot/hapi-googleapis",
   "dependencies": {
-    "googleapis": "^2.0.3"
+    "googleapis": "2.0.3"
   }
 }
